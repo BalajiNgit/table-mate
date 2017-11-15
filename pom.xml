@@ -6,7 +6,7 @@
 	<groupId>com.example.greeting</groupId>
 	<artifactId>Greeting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>Greeting</name>
 	<description>Demo project for Spring Boot</description>
@@ -28,6 +28,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -49,7 +50,16 @@
             <artifactId>mysql-connector-java</artifactId>
              <version>5.1.40</version>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>9.4-1200-jdbc41</version>
+		</dependency>
+        
 	</dependencies>
+		
 
 	<build>
 		<plugins>

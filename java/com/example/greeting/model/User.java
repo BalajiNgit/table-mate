@@ -17,23 +17,23 @@ public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 		@Id
-	    @Column(name="user_master_details.uid")
+	    @Column(name="uid")
 	    @JsonProperty(value="uid")
 	    private Integer uid;
 	    
-	    @Column(name="user_master_details.username")
+	    @Column(name="username")
 	    @JsonProperty(value="userName")
 	    private String userName;
 	    
-	    @Column(name="user_master_details.password")
+	    @Column(name="password")
 	    @JsonProperty(value="password")
 	    private String password;
 	    
-	    @Column(name="user_master_details.isActive")
+	    @Column(name="isactive")
 	    @JsonProperty(value="isActive")
 	    private String isActive;
 	    
-	    @Column(name="userGroupCode")
+	    @Column(name="groupCode")
 	    @JsonProperty(value="userGroupCode")
 	    private String userGroupCode;
 	    
